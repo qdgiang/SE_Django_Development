@@ -16,8 +16,8 @@
     <div class="mask" style="">
       <div class="d-flex justify-content-center align-items-center h-100">
         <div class="text-white">
-          <h1 class="mb-3">POS demo project</h1>
-          <h4 class="mb-3">Admin page</h4>
+          <h1 class="mb-3">{{r.name}}</h1>
+          <h4 class="mb-3">Order details</h4>
         </div>
       </div>
     </div>
@@ -58,9 +58,9 @@
   <form action="" method="POST">
     {% csrf_token %}
     {% if b.finish %}
-    <button style="width: 20%;" type="submit">UNCHECK</button>
+    <button style="width: 20%;" type="submit">NOT DONE</button>
     {%else%}
-    <button style="width: 20%;" type="submit">CHECK</button>
+    <button style="width: 20%;" type="submit">DONE</button>
     {% endif %}
   </form>
   </div>
