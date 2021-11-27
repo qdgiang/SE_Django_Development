@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .views import *
 # Create your views here.
-BACKGROUND_URL="/media/background.jpg"
+BACKGROUND_URL="https://scontent.xx.fbcdn.net/v/t1.15752-9/p160x160/256270882_925591381423228_4864508612004631979_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=aee45a&_nc_ohc=Y1XadNSEnYgAX-WrOYk&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=1f41dce50beb30bfc8b25cfb7c13b0cb&oe=61B584D5"
 
 def hello(request):
     return render(request,"index.html")
